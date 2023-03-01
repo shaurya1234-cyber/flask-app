@@ -1,0 +1,6 @@
+runtime: python310
+entrypoint: gunicorn -b :$PORT main:app
+env_variables:
+  SQLALCHEMY_DATABASE_URI: 'mysql+pymysql://shaurya:1234@/mysql?unix_socket=/cloudsql/pelagic-gist-379217
+
+
